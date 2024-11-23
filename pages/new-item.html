@@ -24,27 +24,21 @@
     
         </div>
 
-        <div class="form-div">
-
-            <h2>to-do item</h2>
-            <input type="text" id="title" name="title" placeholder="title...">
-
-<!-- adapted from w3 schools ... not sure if i want to use a dropdown yet
-            <div id="dropdown">
-                <button class="dropbtn">assign a list</button>
-                <div class="dropdown-content">
-                    <a href="folder-library.html">list 1</a>
-                    <a href="folder-library.html"> list 2</a>
-                </div>
-            </div> -->
-
-            <br> <br>
-
-            <textarea name="notes" id="notes" placeholder="notes..."></textarea>
-
-            <br> <br>
+        <!-- todo list must be able to create, edit, delete, and re-order tasks -->
+        <!-- code adapted from codepen.io -> https://codepen.io/beeeees/pen/AJBjKR -->
+        <div id="item">
             
-            <button type="submit">save</button>
+            <h2>to-do item</h2>
+
+            <form name="toDoList" id="todo-form">
+                <input type="text" name="listItem" placeholder="new item...">
+            </form>
+
+            <div id="enterButton">enter</div>
+
+            <br>
+
+            <ul id="task-list"></ul>
 
         </div>
 

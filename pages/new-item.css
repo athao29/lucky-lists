@@ -1,6 +1,8 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Jua&family=Montserrat:wght@500&display=swap');
+
 html, body {
     background-color: #E7F7EC;
-    font-family: 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
+    font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
     color: #305252;
 }
 
@@ -54,15 +56,179 @@ h3 {
 .button:hover {
     background-color: #305252;
     color: #E7F7EC;
+} /* code adapted from w3 schools hoverable buttons 
+
+#lists-button {
+    margin-top: 10%;
+}
+
+#item {
+    border-radius: 5%;
+    margin-left: 75px;
+    background-color: white;
+    padding: 30px 60px;
+}
+
+#enterButton {
+    background-color: #A2C5AC;
+    border-radius: 50px;
+    color: #191B1A;
+    margin-top: 10%;
+    text-align: center;
+}  */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Jua&family=Montserrat:wght@500&display=swap');
+
+html, body {
+    background-color: #E7F7EC;
+    font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
+    color: #305252;
+    margin: 0;
+    padding: 0;
+}
+
+.lucky-lists {
+    color: #305252;
+    font-size: 75px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+h3 {
+    color: #305252;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.icon {
+    width: 100px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #e9e9e9;
+}
+
+#side-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#nav-tabs {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: #A2C5AC;
+    border-radius: 50px;
+    color: #191B1A;
+    font-weight: bold;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    margin: 5%;
+}
+
+.button:hover {
+    background-color: #305252;
+    color: #E7F7EC;
 } /* code adapted from w3 schools hoverable buttons */
 
 #lists-button {
     margin-top: 10%;
 }
 
-.form-div {
+#item {
     border-radius: 5%;
     margin-left: 75px;
     background-color: white;
     padding: 30px 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[name="listItem"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#enterButton {
+    background-color: #A2C5AC;
+    border-radius: 50px;
+    color: #191B1A;
+    padding: 10px 20px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#enterButton:hover {
+    background-color: #305252;
+    color: #E7F7EC;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#task-list li span {
+    flex: 1;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#task-list li button {
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition-duration: 0.4s;
+}
+
+#task-list li button:hover {
+    background-color: #ff4500;
+}
+
+#task-list li button.move {
+    background-color: #00aaff;
+}
+
+#task-list li button.move:hover {
+    background-color: #0077cc;
 }
