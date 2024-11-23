@@ -1,0 +1,105 @@
+body {
+    background-color: #E7F7EC;
+    font-family: 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
+    font-size: medium;
+}
+
+.lucky-lists {
+    color: #305252;
+    font-size: 75px;
+    text-align: center;
+    text-decoration: none;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.icon {
+    display: flex; 
+    margin-top: 5%;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 125px;
+} /* code adapted from w3 schools' style image example */
+
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none; 
+    padding: 0;
+    margin: 5%;
+  }
+  
+  li {
+    margin: 0 35px; 
+  }
+  
+  a {
+    text-decoration: none; 
+    color: #191B1A; 
+}  
+
+
+#items {
+    background-color: #A2C5AC;
+    border-radius: 50px;
+	font-size: 25px; 
+    font-weight: bold;
+	padding: 10px 20px;
+    text-align: center;
+    width: 125px;
+    margin: 15px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+
+    display: inline;
+    justify-content: center;
+}
+
+#items:hover {
+    background-color: #305252;
+    color: #E7F7EC;
+} /* code adapted from w3 schools hoverable buttons */
+
+#lists {
+    border-radius: 50px;
+	font-size: 25px; 
+    font-weight: bold;
+	padding: 10px 20px;
+    text-align: center;
+    width: 125px;
+    margin: 15px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+
+    display: inline;
+    justify-content: center;
+}
+
+#lists:hover {
+    background-color: #305252;
+    color: #E7F7EC;
+} /* code adapted from w3 schools hoverable buttons */
+
+div {
+    display: inline;
+    text-align: center;
+}
+
+.todo {
+    background-color: white;
+    padding: 10%;
+    border-radius: 10%;
+}
+
+.todo-done {
+    background-color: lightgray;
+    padding: 10%;
+    border-radius: 10%;
+}
