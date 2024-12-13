@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.getElementById('task-list');
     const newTaskInput = document.querySelector('input[name="listItem"]');
-    const addTaskButton = document.getElementById('enterButton');
+    const addTaskButton = document.getElementById('saveButton');
 
     // Add a new task when the enter button is clicked
     addTaskButton.addEventListener('click', addTask);

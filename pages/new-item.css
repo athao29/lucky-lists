@@ -8,6 +8,8 @@ html, body {
     padding: 0;
 }
 
+
+/* LUCKY LISTS TITLE */
 .lucky-lists {
     color: #305252;
     font-size: 75px;
@@ -18,10 +20,8 @@ html, body {
     margin-right: auto;
 }
 
-h3 {
-    color: #305252;
-}
 
+/* SIDE NAV COLUMN */
 #container {
     display: flex;
     align-items: center;
@@ -30,12 +30,14 @@ h3 {
 }
 
 .icon {
-    width: 100px;
+    width: 125px;
     margin: 0 auto 20px;
     border-radius: 50%;
     background-color: #e9e9e9;
 }
 
+
+/* SIDE NAV APPEARANCE/DECORATIVES */
 #side-nav {
     display: flex;
     flex-direction: column;
@@ -43,8 +45,11 @@ h3 {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
+
+/* SIDE NAV BUTTONS */
 #nav-tabs {
     display: flex;
     flex-direction: column;
@@ -56,7 +61,6 @@ h3 {
     color: #191B1A;
     font-weight: bold;
     padding: 15px 30px;
-    text-align: center;
     text-decoration: none;
     transition-duration: 0.4s;
     margin: 5%;
@@ -79,6 +83,8 @@ h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
+/* ITEM FORM */
 form {
     display: flex;
     justify-content: center;
@@ -93,7 +99,7 @@ input[name="listItem"] {
     border-radius: 5px;
 }
 
-#enterButton {
+#saveButton {
     background-color: #A2C5AC;
     border-radius: 50px;
     color: #191B1A;
@@ -104,7 +110,7 @@ input[name="listItem"] {
     transition-duration: 0.4s;
 }
 
-#enterButton:hover {
+#saveButton:hover {
     background-color: #305252;
     color: #E7F7EC;
 }
