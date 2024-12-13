@@ -6,8 +6,10 @@ html, body {
     color: #305252;
     margin: 0;
     padding: 0;
+    font-size: large;
 }
 
+/* LUCKY LISTS TITLE */
 .lucky-lists {
     color: #305252;
     font-size: 75px;
@@ -23,10 +25,11 @@ html, body {
     margin-top: 5%;
     margin-left: auto; 
     margin-right: auto; 
-    width: 125px;
+    width: 7%;
 } /* code adapted from w3 schools' style image example */
 
 
+/* NAV BAR (LISTS AND ITEMS) */
 nav {
     display: flex;
     justify-content: center; 
@@ -37,7 +40,7 @@ nav {
     display: flex;
     list-style-type: none; 
     padding: 0;
-    margin: 5%;
+    margin: 3%;
   }
   
   li {
@@ -50,6 +53,7 @@ nav {
 }  
 
 
+/* NAV BAR - ITEMS BUTTON */
 #items {
     background-color: #A2C5AC;
     border-radius: 50px;
@@ -71,6 +75,8 @@ nav {
     color: #E7F7EC;
 } /* code adapted from w3 schools hoverable buttons */
 
+
+/* NAV BAR - LISTS BUTTON */
 #lists {
     border-radius: 50px;
 	font-size: 25px; 
@@ -91,19 +97,29 @@ nav {
     color: #E7F7EC;
 } /* code adapted from w3 schools hoverable buttons */
 
+
+/* MISC ITEMS */
 div {
-    display: inline;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 1%;
 }
 
-.todo {
+.creation-icon {
+    width: 100px;
+    margin-right: 20px;
+} 
+
+.item {
     background-color: white;
-    padding: 10%;
+    padding: 60px;
     border-radius: 10%;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.todo-done {
+#done {
     background-color: lightgray;
-    padding: 10%;
-    border-radius: 10%;
 }

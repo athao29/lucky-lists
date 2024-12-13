@@ -8,7 +8,7 @@ html, body {
     padding: 0;
 }
 
-/* LUCKY LISTS HEADER */
+/* LUCKY LISTS TITLE */
 .lucky-lists {
     color: #305252;
     font-size: 75px;
@@ -105,12 +105,11 @@ div {
     margin: 0;
 }
 
+.creation-icon {
+    width: 100px;
+    margin-right: 10px;
+} 
+
 .folder {
     width: 10%;
-    padding-right: 2%;
-    padding-left: 2%;
 }
-
-.creation-icon {
-    width: 50%;
-} 
