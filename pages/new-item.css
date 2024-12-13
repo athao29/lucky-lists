@@ -39,9 +39,6 @@ html, body {
 
 /* SIDE NAV APPEARANCE/DECORATIVES */
 #side-nav {
-    position: fixed;
-    top: 165px;
-    left: 650px;
     flex-direction: column;
     align-items: center;
     padding: 35px;
@@ -86,10 +83,6 @@ html, body {
     background-color: white;
     padding: 30px 60px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-    position: fixed;
-    top: 165px;
-    left: 850px;
 }
 
 form {
