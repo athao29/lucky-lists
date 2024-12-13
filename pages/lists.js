@@ -16,7 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ADD TASK ITEM TO THE LIST
     function addTask() {
         const taskText = newTaskInput.value.trim();
-        if (taskText === '') return;
+        if (taskText === '') {
+            alert('please enter a task!');
+            return;
+        }
 
         const li = document.createElement('li');
         const taskSpan = document.createElement('span');
@@ -57,20 +60,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const input = document.createElement('input');
         input.type = 'text';
         input.value = currentText;
+        input.className = 'task-input'; // Apply the CSS class
+    
         taskSpan.replaceWith(input);
         input.focus();
-
+    
         input.addEventListener('blur', () => {
             taskSpan.textContent = input.value.trim() || currentText;
             input.replaceWith(taskSpan);
         });
-
+    
         input.addEventListener('keypress', (event) => {
             if (event.key === 'Enter') {
                 input.blur();
             }
         });
-    }
+    }    
 
     // MOVES A TASK ITEM UP OR DOWN IN THE LIST
     function moveTask(taskItem, direction) {
