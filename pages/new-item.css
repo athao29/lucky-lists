@@ -93,23 +93,25 @@ form {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
 }
 
 .label {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 select {
     font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 input[name="listItem"] {
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 10px;
     font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -118,6 +120,7 @@ input[name="listItem"] {
     background-color: #A2C5AC;
     border-radius: 50px;
     color: #191B1A;
+    font-size: 20px;
     padding: 10px;
     width: 75px;
     text-align: center;
@@ -131,7 +134,7 @@ input[name="listItem"] {
 }
 
 
-/* TO-DO ITEM */
+/* TASK ITEM */
 #task-list {
     list-style: none;
     padding: 0;
@@ -141,8 +144,8 @@ input[name="listItem"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: white;
+    border: 1px solid #A2C5AC;
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -167,13 +170,13 @@ input[name="listItem"] {
 }
 
 #task-list li button:hover {
-    background-color: #305252;
+    background-color: #286237;
 }
 
 #task-list li button.move {
-    background-color: #305234;
+    background-color: #305252;
 }
 
 #task-list li button.move:hover {
-    background-color: #539665;
+    background-color: #A2C5AC;
 }

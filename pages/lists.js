@@ -1,14 +1,11 @@
-// note: ai was used to help create some code 
+// NOTE: COPILOT AI WAS USED TO HELP WRITE AND MODIFY SOME FUNCTIONS 
 
 document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.getElementById('task-list');
     const newTaskInput = document.querySelector('input[name="listItem"]');
     const addTaskButton = document.getElementById('saveButton');
 
-    // Add a new task when the enter button is clicked
     addTaskButton.addEventListener('click', addTask);
-
-    // Add a new task when the Enter key is pressed
     newTaskInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             e.preventDefault();
@@ -16,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Function to add a new task
+    // ADD TASK ITEM TO THE LIST
     function addTask() {
         const taskText = newTaskInput.value.trim();
         if (taskText === '') return;
@@ -24,10 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const li = document.createElement('li');
         const taskSpan = document.createElement('span');
         taskSpan.textContent = taskText;
-        taskSpan.addEventListener('dblclick', editTask);
+
+        // ITEM FUNCTIONS
+        const editButton = document.createElement('button');
+        editButton.textContent = 'edit';
+        editButton.addEventListener('click', () => editTask(li, taskSpan));
 
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
+        deleteButton.textContent = 'delete';
         deleteButton.addEventListener('click', () => li.remove());
 
         const moveUpButton = document.createElement('button');
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         moveDownButton.addEventListener('click', () => moveTask(li, 'down'));
 
         li.appendChild(taskSpan);
+        li.appendChild(editButton);
         li.appendChild(deleteButton);
         li.appendChild(moveUpButton);
         li.appendChild(moveDownButton);
@@ -49,9 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
         newTaskInput.value = '';
     }
 
-    // Function to edit a task
-    function editTask(event) {
-        const taskSpan = event.target;
+    // EDIT A TASK ITEM IN THE LIST
+    function editTask(li, taskSpan) {
         const currentText = taskSpan.textContent;
         const input = document.createElement('input');
         input.type = 'text';
@@ -71,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Function to move a task up or down
+    // MOVES A TASK ITEM UP OR DOWN IN THE LIST
     function moveTask(taskItem, direction) {
         if (direction === 'up' && taskItem.previousElementSibling) {
             taskList.insertBefore(taskItem, taskItem.previousElementSibling);
