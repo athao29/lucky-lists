@@ -13,32 +13,38 @@
 
     <div id="container">
 
+        <!-- SIDE NAV BAR - ICON, BUTTONS (LISTS & ITEMS) -->
         <div id="side-nav">
-
             <img src="../images/clover-icon.png" alt="placeholder profile icon" class="icon">
-    
             <div id="nav-tabs">
-                <a href="library-folders.html" class="button" id="lists-button">lists</a>
+                <a href="landing.html" class="button" id="lists-button">home</a>
+                <a href="library-folders.html" class="button">lists</a>
                 <a href="library-items.html" class="button">items</a>
             </div>
-    
         </div>
 
+        <!-- TO-DO ITEM CONTENT -->
         <!-- code adapted from codepen.io -> https://codepen.io/beeeees/pen/AJBjKR -->
         <div id="item">
-            
             <h2>to-do item</h2>
 
-            <form name="toDoList" id="todo-form">
-                <input type="text" name="listItem" placeholder="new item...">
-            </form>
+            <label for="list" class="label">list:</label>
+                <select id="list" name="list">
+                    <option value="no list">no list</option>
+                    <option value="list 01">list 01</option>
+                    <option value="list 02">list 02</option>
+                </select>
 
+                <form name="toDoList" id="todo-form">
+                    <input type="text" 
+                    name="listItem" 
+                    placeholder="new item...">
+                </form>
             <div id="saveButton">save</div>
 
             <br>
 
             <ul id="task-list"></ul>
-
         </div>
 
     </div>

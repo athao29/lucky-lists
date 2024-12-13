@@ -57,13 +57,16 @@ html, body {
 
 .button {
     background-color: #A2C5AC;
-    border-radius: 50px;
+	border-radius: 50px;
     color: #191B1A;
+	font-size: medium; 
     font-weight: bold;
-    padding: 15px 30px;
+	padding: 10px 15px;
+    text-align: center;
+    width: 75px;
+    margin: 5px;
     text-decoration: none;
     transition-duration: 0.4s;
-    margin: 5%;
 }
 
 .button:hover {
@@ -72,7 +75,7 @@ html, body {
 } /* code adapted from w3 schools hoverable buttons */
 
 #lists-button {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #item {
@@ -84,16 +87,32 @@ html, body {
 }
 
 
-/* ITEM FORM */
+/* TO-DO ITEM CONTENT */
 form {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    font-size: 18px;
+}
+
+select {
+    font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
+    font-size: 16px;
+}
+
 input[name="listItem"] {
-    width: 80%;
+    margin-top: 15px;
     padding: 10px;
+    font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -103,9 +122,8 @@ input[name="listItem"] {
     background-color: #A2C5AC;
     border-radius: 50px;
     color: #191B1A;
-    padding: 10px 20px;
+    padding: 10px 35px;
     text-align: center;
-    margin-left: 10px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
