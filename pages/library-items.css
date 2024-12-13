@@ -1,7 +1,11 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Jua&family=Montserrat:wght@500&display=swap');
+
+html, body {
     background-color: #E7F7EC;
-    font-family: 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
-    font-size: medium;
+    font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
+    color: #305252;
+    margin: 0;
+    padding: 0;
 }
 
 .lucky-lists {
