@@ -22,10 +22,10 @@ html, body {
 
 .icon {
     display: flex; 
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: auto; 
     margin-right: auto; 
-    width: 7%;
+    width: 8%;
 } /* code adapted from w3 schools' style image example */
 
 
