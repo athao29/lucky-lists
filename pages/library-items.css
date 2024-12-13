@@ -102,7 +102,7 @@ div {
     align-items: center;
     justify-content: center;
     margin: 0;
-    margin-top: 1%;
+    margin-top: 0.75%;
 }
 
 .creation-icon {
@@ -111,8 +111,10 @@ div {
 } 
 
 .item {
+    color: #191B1A;
     background-color: white;
-    padding: 60px;
+    padding: 60px 50px;
+    text-align: center;
     border-radius: 10%;
     margin-right: 20px;
     margin-left: 20px;
