@@ -37,7 +37,7 @@ nav {
     display: flex;
     list-style-type: none; 
     padding: 0;
-    margin: 5%;
+    margin: 3%;
   }
   
   li {
@@ -95,16 +95,13 @@ nav {
 div {
     display: flex;
     justify-content: center;
+    
 }
 
 .folder {
-    width: 20%;
-    padding: 0px 50px;
+    width: 10%;
 }
 
 .creation-icon {
-    width: 20%;
-    height: 15%;
-    padding: 0px 50px;
-    align-self: center;
+    width: 10%;
 }
