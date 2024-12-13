@@ -21,7 +21,7 @@ html, body {
 
 .icon {
     display: flex; 
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: auto; 
     margin-right: auto; 
     width: 7%;
@@ -58,7 +58,7 @@ nav {
     border-radius: 50px;
 	font-size: 25px; 
     font-weight: bold;
-	padding: 10px 20px;
+	padding: 10px 25px;
     text-align: center;
     width: 125px;
     margin: 15px;
@@ -80,7 +80,7 @@ nav {
     border-radius: 50px;
 	font-size: 25px; 
     font-weight: bold;
-	padding: 10px 20px;
+	padding: 10px 25px;
     text-align: center;
     width: 125px;
     margin: 15px;

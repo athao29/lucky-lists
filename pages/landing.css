@@ -8,6 +8,8 @@ html, body {
     padding: 0;
 }
 
+
+/* LUCKY LISTS TITLE */
 .lucky-lists {
     color: #305252;
     font-size: 75px;
@@ -20,12 +22,14 @@ html, body {
 
 .icon {
     display: flex; 
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: auto; 
     margin-right: auto; 
-    width: 125px;
+    width: 7%;
 } /* code adapted from w3 schools' style image example */
 
+
+/* COLUMN - NEW & LOAD BUTTONS */
 .center-div {
     display: flex;
     flex-direction: column; 
@@ -33,13 +37,15 @@ html, body {
     place-items: center;
 } /* code adapted from flex cheatsheet (https://yoksel.github.io/flex-cheatsheet/#section-flex-direction) */
 
+
+/* BUTTON APPEARANCES */
 .button {
     background-color: #A2C5AC;
 	border-radius: 50px;
     color: #191B1A;
 	font-size: 30px; 
     font-weight: bold;
-	padding: 20px 45px;
+	padding: 20px 35px;
     text-align: center;
     width: 125px;
     margin: 15px;
