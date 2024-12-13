@@ -3,7 +3,7 @@
 html, body {
     background-color: #E7F7EC;
     font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
-    color: #305252;
+    color: #305234;
     margin: 0;
     padding: 0;
 }
@@ -11,7 +11,7 @@ html, body {
 
 /* LUCKY LISTS TITLE */
 .lucky-lists {
-    color: #305252;
+    color: #305234;
     font-size: 75px;
     text-align: center;
     text-decoration: none;
@@ -42,12 +42,11 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #fff;
+    padding: 35px;
+    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-
 
 /* SIDE NAV BUTTONS */
 #nav-tabs {
@@ -59,8 +58,7 @@ html, body {
     background-color: #A2C5AC;
 	border-radius: 50px;
     color: #191B1A;
-	font-size: medium; 
-    font-weight: bold;
+	font-size: larger; 
 	padding: 10px 15px;
     text-align: center;
     width: 75px;
@@ -78,16 +76,16 @@ html, body {
     margin-top: 5%;
 }
 
+
+/* TO-DO ITEM CONTENT */
 #item {
-    border-radius: 5%;
+    border-radius: 5px;
     margin-left: 75px;
     background-color: white;
     padding: 30px 60px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
-/* TO-DO ITEM CONTENT */
 form {
     display: flex;
     justify-content: center;
@@ -96,12 +94,10 @@ form {
 
 h2 {
     font-size: 30px;
-    display: flex;
-    justify-content: center;
 }
 
 .label {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 select {
@@ -110,7 +106,7 @@ select {
 }
 
 input[name="listItem"] {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 10px;
     font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
     font-size: 16px;
@@ -122,7 +118,8 @@ input[name="listItem"] {
     background-color: #A2C5AC;
     border-radius: 50px;
     color: #191B1A;
-    padding: 10px 35px;
+    padding: 10px;
+    width: 75px;
     text-align: center;
     cursor: pointer;
     transition-duration: 0.4s;
@@ -133,6 +130,8 @@ input[name="listItem"] {
     color: #E7F7EC;
 }
 
+
+/* TO-DO ITEM */
 #task-list {
     list-style: none;
     padding: 0;
@@ -156,7 +155,8 @@ input[name="listItem"] {
 }
 
 #task-list li button {
-    background-color: #ff6347;
+    font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
+    background-color: #539665;
     border: none;
     color: #fff;
     padding: 5px 10px;
@@ -167,13 +167,13 @@ input[name="listItem"] {
 }
 
 #task-list li button:hover {
-    background-color: #ff4500;
+    background-color: #305252;
 }
 
 #task-list li button.move {
-    background-color: #00aaff;
+    background-color: #305234;
 }
 
 #task-list li button.move:hover {
-    background-color: #0077cc;
+    background-color: #539665;
 }

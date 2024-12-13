@@ -3,20 +3,21 @@
 html, body {
     background-color: #E7F7EC;
     font-family: 'Jua', 'Avenir', 'Gotham', 'Gill Sans', sans-serif;
-    color: #305252;
+    color: #305234;
     margin: 0;
     padding: 0;
 }
 
+
 /* LUCKY LISTS TITLE */
 .lucky-lists {
-    color: #305252;
+    color: #305234;
     font-size: 75px;
     text-align: center;
     text-decoration: none;
     display: block; 
     margin-left: auto; 
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .icon {
@@ -57,7 +58,6 @@ nav {
     background-color: #A2C5AC;
     border-radius: 50px;
 	font-size: 25px; 
-    font-weight: bold;
 	padding: 10px 25px;
     text-align: center;
     width: 125px;
@@ -79,7 +79,6 @@ nav {
 #items {
     border-radius: 50px;
 	font-size: 25px; 
-    font-weight: bold;
 	padding: 10px 25px;
     text-align: center;
     width: 125px;
